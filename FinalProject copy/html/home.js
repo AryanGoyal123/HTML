@@ -53,7 +53,7 @@ const menu = [
   	category: "Technology",
   	price: 1099.00,
   	img: "ipad.jpg",
-  	desc: `2021 Apple 12.9-inch iPad Pro (Wi‑Fi, 256GB) - Space Gray `,\
+  	desc: `2021 Apple 12.9-inch iPad Pro (Wi‑Fi, 256GB) - Space Gray `,
 },
 {
   	id:8,
@@ -65,7 +65,7 @@ const menu = [
 },
 {
   	id:9,
-  	title: "USB-C to Lightning Cable",
+  	title: "USB-C to Lightning Cable ",
   	category: "Technology",
   	price: 19.00,
  	img: "charger1.jpg",
@@ -138,12 +138,10 @@ function diplayMenuItems(menuItems) {
           <img src=${item.img} alt=${item.title} class="photo" />
           <div class="item-info">
             <header>
-              <h4>${item.title}</h4>
+              <h4> ${item.title}</h4>
               <h4 class="price">$${item.price}</h4>
             </header>
-            <p class="item-text">
-              ${item.desc}
-            </p>
+			<button type="button" class = 'button-add'>Add to cart!</button>
           </div>
         </article>`;
   });
