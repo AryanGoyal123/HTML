@@ -2,9 +2,12 @@
   <html lang="en">
   <head>
       <title>FAQ</title>
-<link rel="stylesheet" href="support.css">
-<script src="support.js"></script>
-<link rel="stylesheet" href="Navbar.css" />
+  <div>
+      <link rel="stylesheet" href="support.css">
+  </div>
+  <div>
+    <link rel="stylesheet" href="Navbar.css">
+  </div>
 </head>
 <body>
   <nav class="center">
@@ -14,13 +17,10 @@
         <i class ="fas fa-bars"></i>
       </button>
   
-    <!-- links -->
+    <!-- links for navbar -->
     <ul class="links">
       <li>
-        <a href="home.html">Home</a>
-      </li>
-      <li>
-        <a href="home.html">MarketPlace</a>
+        <a href="home.html">Menu</a>
       </li>
       <li>
         <a href="support.html">Support</a>
@@ -31,32 +31,69 @@
         </div>
       </li>
     </ul>
-    <!-- social media -->
     </div>
   </nav>
-  <!-- javascript -->
-  <script src="app.js"></script>
-  <link rel="stylesheet" href="support.css">
-  <script src="support.js"></script>
-  </head>
+</div> 
   <body>
-    <div class="layout">
+    <section class="menu">
+      <div class="title">
+        <h2>FAQ and Support</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="layout">
       <div class="accordion">
         <div class="accordion__question">
-          <p>Where is my shipping confirmation</p>
+          <p>Where is my order?</p>
         </div>
         <div class="accordion__answer">
-          <p>Check your email in the next 24-48 hours.</p>
+          <p>Find your confirmation email with the email used to buy. </p>
         </div>
       </div>
       <div class="accordion">
         <div class="accordion__question">
-          <p>How long does it take for me to get my package?</p>
+          <p>How long can I return my order?</p>
         </div>
         <div class="accordion__answer">
-          <p>It takes roughly a week (5 Business Days) for your package to arrive.</p>
+          <p>You can return any unopened item(s) in a 90 day period.</p>
         </div>
+        </div>
+        <div class="accordion">
+          <div class="accordion__question">
+            <p>How do I return my package?</p>
+          </div>
+          <div class="accordion__answer">
+            <p>Please contact support@youbuy.com and we'll cover the costs of returning.</p>
+          </div>
       </div>
+      <div class="accordion">
+        <div class="accordion__question">
+          <p>When should I get my package?</p>
+        </div>
+        <div class="accordion__answer">
+          <p>You should get your package in roughly 1-2 weeks.</p>
+        </div>
+        </div>
+        <div class="accordion">
+          <div class="accordion__question">
+            <p>How can I contact you?</p>
+          </div>
+          <div class="accordion__answer">
+            <p>You can contact us at support@youbuy.com</p>
+          </div>
+          </div>
     </div>
+          <script>
+            let answers=document.querySelectorAll(".accordion");
+            answers.forEach((event)=>{
+                event.addEventListener('click',()=>{
+                    if(event.classList.contains("active")){
+                        event.classList.remove("active");
+                    }
+                    else{
+                        event.classList.add("active");
+                    }
+                })
+            })
+        </script>
 </body>
 </html>
