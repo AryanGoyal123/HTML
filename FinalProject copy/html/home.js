@@ -49,17 +49,17 @@ const menu = [
 },
 {
 	id:7,
-  	title: "2021 Apple 12.9-inch iPad Pro- Space Gray",
+  	title: "2021 Apple 12.9-inch iPad Pro",
   	category: "Technology",
-  	price: 1099.00,
+  	price: 1099,
   	img: "ipad.jpg",
-  	desc: `2021 Apple 12.9-inch iPad Pro (Wi‑Fi, 256GB) - Space Gray `,
+  	desc: `2021 Apple iPad Pro (Wi‑Fi, 256GB)`,
 },
 {
   	id:8,
   	title: "Apple AirPods Pro",
   	category: "Technology",
-  	price: 199.99,
+  	price: 199.9,
   	img: "airpodpro.jpg",
  	desc: `Apple AirPods Pro `,
 },
@@ -67,7 +67,7 @@ const menu = [
   	id:9,
   	title: "USB-C to Lightning Cable ",
   	category: "Technology",
-  	price: 19.00,
+  	price: 19,
  	img: "charger1.jpg",
   	desc: `USB-C to Lightning Cable (1 m) `,
 },
@@ -75,9 +75,9 @@ const menu = [
  	id:10,
   	title: "2021 Apple MacBook Pro - Silver",
   	category: "Technology",
-  	price: 1999.00,
+  	price: 1999,
   	img: "macbook.jpg",
-  	desc: ` 2021 Apple MacBook Pro (14-inch, Apple M1 Pro chip with 8‑core CPU and 14‑core GPU, 16GB RAM, 512GB SSD) - Silver`,
+  	desc: `2021 Apple MacBook Pro (14-inch, Apple M1 Pro chip with 8‑core CPU and 14‑core GPU, 16GB RAM, 512GB SSD)`,
 },
 {
   	id:11,
@@ -141,7 +141,7 @@ function diplayMenuItems(menuItems) {
               <h4> ${item.title}</h4>
               <h4 class="price">$${item.price}</h4>
             </header>
-			<button type="button" class = 'button-add'>Add to cart!</button>
+			<button type="button" class = 'button-add' onclick = "addItemToCart(${item.title}, ${item.price},${item.img})">Add to cart!</button>
           </div>
         </article>`;
   });
@@ -150,6 +150,7 @@ function diplayMenuItems(menuItems) {
 
   sectionCenter.innerHTML = displayMenu;
 }
+
 function displayMenuButtons() {
   const categories = menu.reduce(
     function (values, item) {
@@ -189,4 +190,8 @@ function displayMenuButtons() {
       }
     });
   });
+}
+
+function addToCart(){
+	alert('Hi');
 }
