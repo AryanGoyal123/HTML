@@ -1,3 +1,6 @@
+h2{
+  text-align:center;
+}
 body {
     background-color:white;
   }
@@ -23,8 +26,8 @@ body {
     padding: 10px;
     font-size: large;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #52ab98;
-    background: lightblue;
+    color:#29495d;
+    background: #f0f5f8;
     border-radius: 10px;
   }
   .accordion:hover {
@@ -35,4 +38,18 @@ body {
   }
   .accordion.active .accordion__answer {
     display: block;
+  }
+  .menu {
+    padding: 5rem 0;
+  }
+  .title {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .underline {
+    width: 5rem;
+    height: 0.25rem;
+    background: #c3d9e4;
+    margin-left: auto;
+    margin-right: auto;
   }
