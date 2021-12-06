@@ -4,7 +4,7 @@ const menu = [
 	title: "Play-Doh Modeling 10-Pack Case of Colors",
 	category: "Toys",
 	price: 7.99,
-	img: "./images/item-1.jpeg",
+	img: "Playdoh1.jpg",
 	desc: `Play-Doh Modeling Compound 10-Pack Case of Colors, Non-Toxic, Assorted, 2 oz. Cans, Ages 2 and up, Multicolor.ed `,
 }, 
 {
@@ -12,7 +12,7 @@ const menu = [
 	title: "Play-Doh Modeling 24-Pack Case of Colors",
 	category: "Toys",
 	price: 20.99,
-	img: "./images/item-2.jpeg",
+	img: "playdoh3.jpg",
 	desc: `Play-Doh Modeling Compound 24-Pack Case of Colors, Non-Toxic, Assorted, 3-Ounce Cans, Ages 2 and up, Multicolor `,
 },
  {
@@ -20,7 +20,7 @@ const menu = [
 	title: "Apple Iphone 13 (128GB, Midnight)",
 	category: "Technology",
 	price: 829.99,
-	img: "./images/item-3.jpeg",
+	img: "iphone.jpg",
 	desc: `Advanced dual-camera system with 12MP Wide and Ultra Wide cameras; Photographic Styles, Smart HDR 4, Night mode, 4K Dolby Vision HDR recording`,
 },
 {
