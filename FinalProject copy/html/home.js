@@ -4,7 +4,7 @@ const menu = [
 	title: "Play-Doh Modeling 10-Pack Case of Colors",
 	category: "Toys",
 	price: 7.99,
-	img: "Playdoh1.jpg",
+	img: "Playdoh1.jpeg",
 	desc: `Play-Doh Modeling Compound 10-Pack Case of Colors, Non-Toxic, Assorted, 2 oz. Cans, Ages 2 and up, Multicolor.ed `,
 }, 
 {
@@ -108,7 +108,7 @@ const menu = [
   	title: "How to Catch a Turkey by Adam Wallace ",
  	 category: "Books",
   	price: 7.58,
-  	img: "turkey.jpg",
+  	img: "Turkey.jpg",
   	desc: `How to Catch a Turkey by Adam Wallace`,
 },
 {
