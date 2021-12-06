@@ -22,9 +22,6 @@
           <a href="home.html">Home</a>
         </li>
         <li>
-          <a href="home.html">MarketPlace</a>
-        </li>
-        <li>
           <a href="support.html">Support</a>
         </li>
         <li>
@@ -57,7 +54,13 @@
             <strong class="cart-total-title">Total</strong>
             <span class="cart-total-price">$0</span>
         </div>
-        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        <button class="btn btn-primary btn-purchase" type="button" id = "myButton">PURCHASE</button>
+        <script type="text/javascript">
+          document.getElementById("myButton").onclick = function () {
+              location.href = "payment.html";
+          };
+      </script>
+
     </section>   
      <script type="text/javascript" src="cart.js"></script> 
     <script type="text/javascript" src="home.js"></script> 
