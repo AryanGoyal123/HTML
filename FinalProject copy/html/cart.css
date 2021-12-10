@@ -20,19 +20,6 @@ html, body {
     padding: 0;
     min-height: 100%;
 }
-.title {
-text-align: center;
-margin-bottom: 2rem;
-padding: 5rem 0;
-}
-
-.underline {
-width: 5rem;
-height: 0.25rem;
-background: var(--clr-gold);
-margin-left: auto;
-margin-right: auto;
-}
 
 .nav ul {
     margin: 0;
@@ -161,7 +148,7 @@ margin-right: auto;
 .btn-play {
     display: block;
     margin: 0 auto;
-    color: #2D9CDB;
+    color: #2b6777;
     font-size: 4em;
     border-radius: 50%;
     width: 100px;
@@ -172,14 +159,14 @@ margin-right: auto;
 
 .btn-primary {
     color: white;
-    background-color: #56CCF2;
+    background-color: #2b6777;
     border: none;
     border-radius: .3em;
     font-weight: bold;
 }
 
 .btn-primary:hover {
-    background-color: #2D9CDB;
+    background-color: #2b6777;
 }
 
 .tour-row {
@@ -350,4 +337,13 @@ margin-right: auto;
     display: block;
     margin: 40px auto 80px auto;
     font-size: 1.75em;
+}
+.title{
+    padding: 20px;
+    text-align: center;
+    width: 5rem;
+    height: 0.25rem;
+    margin-left: auto;
+  margin-right: auto;
+  background: var(--clr-gold);
 }
