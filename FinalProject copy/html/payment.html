@@ -6,6 +6,7 @@
         <link rel="stylesheet" type="text/css" href="payment.css"/>
         <script src="payment.js"></script>
     </head>
+    <!-- This entire codebase for payment is done by us. We looked up how to male a forms and use the select and option tag, but we constructed the entire payments page from scratch. -->
     <body>
         <div class="container" id="container">
             <form action="" method="get">
@@ -19,10 +20,13 @@
                         Female <input type="radio" name="gender" id="female">
                     </fieldset>
                 </p>
+                <!-- We are taking in the Email, Address, and Zipcode -->
                 <p>Address: <textarea name="address" id="address" cols="80" rows="5"required></textarea> </p>
                 <p>Email: <input type="email" name="email" id="email"required></p>
                 <p>Zipcode: <input type="number" name="zipcode" id="zipcode"required></p>
                 <h2>Payment Information</h2>
+                <!-- We are taking information about the card type that the perosn is using and their card number and card expiration and cvv -->
+                
                 <p>Card Type:
                     <select name="card_type" id="card_type"required>
                         <option value="">--Select a Card Type--</option>
@@ -39,6 +43,7 @@
                 <p>
                     CVV: <input type="password" name="cvv" id="cvv"required>
                 </p>
+                <!-- We have a basic place order button which shows an alert when you click it on a condition that all the items are filled out -->
                 <input type="submit" value="Pay Now" onclick="placeOrder()">
 
             </form>

@@ -3,6 +3,11 @@ if (document.readyState == 'loading') {
 } else {
     ready()
 }
+// We got most of this code from a Javascript repository on Github
+// Here is the link https://github.com/WebDevSimplified/Introduction-to-Web-Development/blob/master/Introduction%20to%20JavaScript/Lesson%201/store.js
+//We used this instead of writing our code from sratch for the Javacript functions of the cart becuase of its complexity and because it uses some functions we have not learned
+// But we still heavily modified our cart page in order to make it our own 
+// The payment page is entirely done by use 
 
 function ready() {
     var removeCartItemButtons = document.getElementsByClassName('btn-danger')

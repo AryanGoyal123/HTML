@@ -12,17 +12,21 @@
     <!-- styles -->
     <link rel="stylesheet" href="home.css" />
   </head>
+  <!-- For this project we used HTML CSS and Javascript. For version control we set up a github repository with us working on our independent branches. 
+  We leant a lot abotu how to cretae our brnches, pull and push request, setting up a workflow pipeline, and version control principles -->
  <body> 
     <!-- This is the Navbar in the Home page -->
+    <!-- We built the Navbar from scratch with HTML and CSS. We google how a navbar should look like but the entire Navbar codebase is done by us. -->
       <div>
     <link rel="stylesheet" href="Navbar.css" />
     <nav class="center">
       <div class="nav-header">
+        <!-- This is our logo we made using Canva which is a free design tool -->
         <img src="./free-logo-2mygn5hsfc-g5x2ko2zqk.jpg" class = "logo" alt="logo">
         <button class="nav-toggle">
           <i class ="fas fa-bars"></i>
         </button>
-    
+    <!-- Here we connect to other HTML files like Support and Cart -->
       <ul class="links">
         <li>
           <a href="home.html">Home</a>
@@ -39,14 +43,17 @@
       </div>
     </nav>
   </div> 
-
+    <!-- This is main page area. We have the Welcome page and we then use dynamic programming and responsive web design in order to show all the items on the home page. -->
   <section class="menu">
     <div class="title">
       <h2>Welcome to BUYIT</h2>
       <div class="underline"></div>
     </div>
-
+    <!-- Here we show buttons according to the category of the item and when you click the button only the items in that category would show up -->
     <div class="btn-container"></div>
+    <!-- We made a list of the items we want to display and then searched the name, price, description, and an image.
+    We then aranged them in a javascript file to dynamically add them
+    Our Javsdcript is set up in such a way you can add a new product very easily becuase you dont have to change the html, just add the detials to the javascript file and it will handle the rest -->
     <div class="section-center"></div>
 
   </section>

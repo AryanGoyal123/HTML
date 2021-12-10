@@ -1,23 +1,26 @@
 <!DOCTYPE html>
-  <html lang="en">
-  <head>
-      <title>FAQ</title>
-  <div>
-      <link rel="stylesheet" href="support.css">
-  </div>
-  <div>
-    <link rel="stylesheet" href="Navbar.css">
-  </div>
+<html lang="en">
+<head>
+        <title>FAQ</title>
+    <div>
+        <link rel="stylesheet" href="support.css">
+    </div>
+    <div>
+      <link rel="stylesheet" href="Navbar.css">
+    </div>
 </head>
 <body>
   <nav class="center">
     <div class="nav-header">
+      
+    <!-- We built the Navbar from scratch with HTML and CSS. We google how a navbar should look like but the entire Navbar codebase is done by us. -->
       <img src="./free-logo-2mygn5hsfc-g5x2ko2zqk.jpg" class = "logo" alt="logo">
       <button class="nav-toggle">
         <i class ="fas fa-bars"></i>
       </button>
   
     <!-- links for navbar -->
+    <!-- This is our logo we made using Canva which is a free design tool -->
     <ul class="links">
       <li>
         <a href="home.html">Menu</a>
@@ -33,9 +36,11 @@
     </ul>
     </div>
   </nav>
-</div> 
-  <body>
-    <section class="menu">
+
+  <!-- This is the part where we try to answer some of the comman questions that our customers might have. 
+    We are using basic HTML and CSS to make this functions work. 
+    This entire functionality is done by us -->
+    <div class="menu">
       <div class="title">
         <h2>FAQ and Support</h2>
         <div class="underline"></div>
@@ -82,6 +87,8 @@
           </div>
           </div>
     </div>
+    </div>
+    <!-- This is our basic Javascript that makes the clicking function work.  -->
           <script>
             let answers=document.querySelectorAll(".accordion");
             answers.forEach((event)=>{

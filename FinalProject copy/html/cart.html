@@ -8,15 +8,17 @@
 <body> 
     <script type="text/javascript" src="cart.js"></script> 
     <!-- Navbar in html -->
+    <!-- We built the Navbar from scratch with HTML and CSS. We google how a navbar should look like but the entire Navbar codebase is done by us. -->
   <div>
     <link rel="stylesheet" href="Navbar.css" />
     <nav class="center">
       <div class="nav-header">
+        <!-- This is our logo we made using Canva which is a free design tool -->
         <img src="./free-logo-2mygn5hsfc-g5x2ko2zqk.jpg" class = "logo" alt="logo">
         <button class="nav-toggle">
           <i class ="fas fa-bars"></i>
         </button>
-    
+     <!-- Here we connect to other HTML files like Support and Cart -->
       <ul class="links">
         <li>
           <a href="home.html">Home</a>
@@ -33,7 +35,7 @@
       </div>
     </nav>
   </div> 
-
+<!-- This is the title of the page 'cart' -->
 <section class="menu">
   <div class="title">
     <h2>Cart</h2>
@@ -99,6 +101,7 @@
             <span class="cart-total-price">$0</span>
         </div>
         <button class="btn btn-primary btn-purchase" type="button" id = "myButton">PURCHASE</button>
+        <!-- This is some basic jaavscript in order to load the payemnts page when we click the Pay Now button so you can put in the information and make the final payment -->
         <script type="text/javascript">
           document.getElementById("myButton").onclick = function () {
               location.href = "payment.html";

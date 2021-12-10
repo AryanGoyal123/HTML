@@ -129,7 +129,10 @@ window.addEventListener("DOMContentLoaded", function () {
   diplayMenuItems(item);
   displayMenuButtons();
 });
-
+// We made a list of the items we want to display and then searched the name, price, description, and an image.
+  //  We then aranged them in a javascript file to dynamically add them
+    //Our Javsdcript is set up in such a way you can add a new product very easily becuase you dont have to change the html, just add the detials to the javascript file 
+	//and it will handle the rest 
 function diplayMenuItems(menuItems) {
   let displayMenu = menuItems.map(function (item) {
      console.log(item);
@@ -177,16 +180,16 @@ function displayMenuButtons() {
     btn.addEventListener("click", function (e) {
       // console.log(e.currentTarget.dataset);
       const category = e.currentTarget.dataset.id;
-      const menuCategory = item.filter(function (menuItem) {
+      const Category = item.filter(function (Items) {
         // console.log(menuItem.category);
-        if (menuItem.category === category) {
-          return menuItem;
+        if (Items.category === category) {
+          return Items;
         }
       });
       if (category === "all") {
         diplayMenuItems(item);
       } else {
-        diplayMenuItems(menuCategory);
+        diplayMenuItems(Category);
       }
     });
   });
